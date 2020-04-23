@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "scp -r ./dist/ root@192.144.212.110:/root/deploy/toko.wang/"
+    "deploy": "vue-cli-service build && scp -r ./dist/ root@192.144.212.110:/root/deploy/toko.wang/"
   },
   "dependencies": {
     "core-js": "^3.6.4",
